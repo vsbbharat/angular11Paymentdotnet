@@ -15,6 +15,9 @@ namespace PaymentAPI.Models
         [Column(TypeName = "nvarchar(100)")]
         public string name { get; set; }
 
+        [Column(TypeName = "nvarchar(100)")]
+        public string password { get; set; }
+
         [Column(TypeName = "int")]
         public int age { get; set; }
 

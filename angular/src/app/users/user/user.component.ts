@@ -17,7 +17,7 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
   }
   onSubmit(form: NgForm) {
-    if (this.service.formData.UserID == 0)
+    if (this.service.formData.userID == 0)
       this.insertRecord(form);
     else
       this.updateRecord(form);

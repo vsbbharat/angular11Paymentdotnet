@@ -15,7 +15,8 @@ export class UsersService {
   }
 
   putPaymentDetail() {
-    return this.http.put(`${this.baseURL}/${this.formData.UserID}`, this.formData);
+    console.log(this.formData);
+    return this.http.put(`${this.baseURL}/${this.formData.userID}`, this.formData);
   }
 
   deletePaymentDetail(id: number) {
